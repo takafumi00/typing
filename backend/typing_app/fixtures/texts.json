@@ -1,0 +1,17 @@
+[
+  {"model": "typing_app.text", "pk": 1, "fields": {"theme": "python", "content": "def fibonacci(n):\n    a, b = 0, 1\n    for _ in range(n):\n        yield a\n        a, b = b, a + b"}},
+  {"model": "typing_app.text", "pk": 2, "fields": {"theme": "python", "content": "class Stack:\n    def __init__(self):\n        self.items = []\n    def push(self, item):\n        self.items.append(item)\n    def pop(self):\n        return self.items.pop()"}},
+  {"model": "typing_app.text", "pk": 3, "fields": {"theme": "python", "content": "import os\nimport sys\n\ndef read_file(path):\n    with open(path, 'r') as f:\n        return f.read()"}},
+  {"model": "typing_app.text", "pk": 4, "fields": {"theme": "python", "content": "squares = [x ** 2 for x in range(10) if x % 2 == 0]\nprint(squares)"}},
+  {"model": "typing_app.text", "pk": 5, "fields": {"theme": "python", "content": "from functools import reduce\n\nresult = reduce(lambda x, y: x + y, range(1, 11))\nprint(result)"}},
+  {"model": "typing_app.text", "pk": 6, "fields": {"theme": "javascript", "content": "const fetchData = async (url) => {\n  const response = await fetch(url);\n  const data = await response.json();\n  return data;\n};"}},
+  {"model": "typing_app.text", "pk": 7, "fields": {"theme": "javascript", "content": "class EventEmitter {\n  constructor() {\n    this.events = {};\n  }\n  on(event, listener) {\n    if (!this.events[event]) {\n      this.events[event] = [];\n    }\n    this.events[event].push(listener);\n  }\n}"}},
+  {"model": "typing_app.text", "pk": 8, "fields": {"theme": "javascript", "content": "const debounce = (fn, delay) => {\n  let timer;\n  return (...args) => {\n    clearTimeout(timer);\n    timer = setTimeout(() => fn(...args), delay);\n  };\n};"}},
+  {"model": "typing_app.text", "pk": 9, "fields": {"theme": "javascript", "content": "const compose = (...fns) => (x) =>\n  fns.reduceRight((v, f) => f(v), x);\n\nconst double = x => x * 2;\nconst addOne = x => x + 1;\nconst transform = compose(double, addOne);"}},
+  {"model": "typing_app.text", "pk": 10, "fields": {"theme": "javascript", "content": "function quickSort(arr) {\n  if (arr.length <= 1) return arr;\n  const pivot = arr[Math.floor(arr.length / 2)];\n  const left = arr.filter(x => x < pivot);\n  const right = arr.filter(x => x > pivot);\n  return [...quickSort(left), pivot, ...quickSort(right)];\n}"}},
+  {"model": "typing_app.text", "pk": 11, "fields": {"theme": "quotes", "content": "First, solve the problem. Then, write the code."}},
+  {"model": "typing_app.text", "pk": 12, "fields": {"theme": "quotes", "content": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand."}},
+  {"model": "typing_app.text", "pk": 13, "fields": {"theme": "quotes", "content": "Programming is the art of telling another human being what one wants the computer to do."}},
+  {"model": "typing_app.text", "pk": 14, "fields": {"theme": "quotes", "content": "The best error message is the one that never shows up."}},
+  {"model": "typing_app.text", "pk": 15, "fields": {"theme": "quotes", "content": "Simplicity is the soul of efficiency."}}
+]
