@@ -71,3 +71,8 @@ typing/
     ├── config/               # Django設定・CORS
     └── typing_app/           # モデル・ビュー・シリアライザ
 ```
+
+
+
+https://github.com/user-attachments/assets/93537dcc-3283-4572-b7ab-037b92aa7f36
+
